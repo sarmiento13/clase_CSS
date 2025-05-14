@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+.bandera {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    border: 3px solid black;
+}
+.blanco{
+    display: flex;
+    align-items: center;
+}
+.blanco img{
+    width: 100%;
+}
+.peru .rojo, .chile .rojo {
+    background-color: red;
+    flex: 1;
+}
+
+.peru .blanco {
+    background-color: white;
+    flex: 1;
+}
+
+.chile {
+    flex-direction: column;
+}
+
+.chile .blanco {
+    background-color: white;
+    flex: 1;
+    display: flex;
+}
+
+.chile .azul {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.chile .rojo {
+    background-color: red;
+    flex: 1;
+}
+
+.chile .azul img {
+    width: 100%;
+}
