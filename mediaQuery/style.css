@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --rojo:tomato;
+    --amarillo:orange;
+    --verde:mediumSeaGreen;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+section{
+    height: 100%;
+    width: 33%;
+    margin: 3px;
+}
+.fondo_amarillo{
+    background: var(--amarillo);
+}
+.fondo_rojo{
+    background: var(--rojo);
+}
+.fondo_verde{
+    background: var(--verde);
+}
+@media(max-width: 720px){
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 100%;
+    }
+}
+@media(max-width: 480px){
+    .fondo_rojo{
+        display: none;
+    }
+}
